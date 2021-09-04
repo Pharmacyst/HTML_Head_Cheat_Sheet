@@ -1,0 +1,14 @@
+body {
+    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-style: normal;    
+    font-weight: 700;
+    background-color: blanchedalmond;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
