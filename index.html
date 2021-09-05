@@ -1,11 +1,101 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>HTML Head Content Cheat Sheet</title>
+    <meta charset="UTF-8">
 </head>
 <body>
     <header>
         <h1>What goes in a &lt;head&gt; tag anyway?</h1>
         <h2>A brief guide to specifying HTML metadata</h2>
     </header>
+    <main>
+        <section class="intro_text">
+            <h2>Introduction</h2>
+            <p>The <span class="code">&lt;head&gt;</span> element is a container for metadata (data about data) and is placed between the <span class="code">&lt;html&gt;</span> tag and the <span class="code">&lt;body&gt;</span> tag.</p>
+            <p>HTML metadata is data about the HTML document. Metadata is not displayed.</p>            
+            <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+        </section>
+        <section class="table">
+            <h2>The Cheat Sheet</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element Name</th>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Title</td>
+                        <td class="code">&lt;title&gt;</td>
+                        <td>Provides the page's title.<br> The title appears on the browser's title bar or in the page's tab.<br>
+                            It also provides a title for favorites and for search results.</td>
+                    </tr>
+                    <tr>
+                        <td>Style</td>
+                        <td class="code">&lt;style&gt;</td>
+                        <td>Provides a space for inserting CSS styling rules for the given page.<br>
+                            This is OK for simple single-page sites, but styling should idealy be put in a separate CSS file.</td>
+                    </tr>
+                    <tr>
+                        <td>External Ressource Link</td>
+                        <td class="code">&lt;link&gt;</td>
+                        <td>Links the current page to external ressources.
+                            <ul>
+                                <li>The <span class="code">href</span> attribute specifies the URL of the linked ressource.</li>
+                                <li>The <span class="code">rel</span> attribute specifies the relationship between the page and the external ressource.<br>
+                                The most common is "stylesheet" for CSS files. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Metadata</td>
+                        <td class="code">&lt;meta&gt;</td>
+                        <td>Provides information like the page's character set, author, and viewport, for either the browser or search engines.<br>
+                            <ul>
+                                <li>For the browser: Character set, Viewport, Refresh rate</li>
+                                <li>For search engines: Author, Keywords, Description</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td class="code">&lt;script&gt;</td>
+                        <td>Used to define client-side JavaScript scripts for this page.<br>
+                            Note: To avoid cluttering the HTML and to following the "seperation of concerns" doctrine, it is preferable to write scripts in a seperate .js file.<br>
+                            To do this, add a <span class="code">src</span> attribute as follows: <span class="code">&lt;script src="scriptfile.js"&gt;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Base URL</td>
+                        <td class="code">&lt;base&gt;</td>
+                        <td>Specifies the base URL and/or target for all relative URLs in the page.<br>
+                            Must have <em>at least</em> one of the following attributes:
+                            <ul>
+                                <li><span class="code">href</span>: Defines the base URL</li>
+                                <li><span class="code">target</span>: Tells the browser how to open the URL (new tab, window, etc.)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="valid_HTML">
+            <h2>For valid HTML5...</h2>
+            <p>The following should always appear for an HTML page to be considered "valid" to HTML5 standards:</p>
+            <ul>
+                <li><span class="code">&lt;title&gt;</span></li>
+                <li><span class="code">&lt;meta charset="UTF-8"&gt;</span> or other character sets.</li>
+                <li> ... and don't forget to delcare your language in the opening <span class="code">&lt;html&gt;</span> tag!!!</li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+</html>
